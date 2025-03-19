@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include <catch2/benchmark/catch_benchmark.hpp>
 
-#include <processor.h>
+#include <registers.h>
 
 TEST_CASE("testing condReg_t registors", "[condReg_t]")
 {
@@ -23,6 +23,7 @@ TEST_CASE("testing condReg_t registors", "[condReg_t]")
     SECTION("random tests for set operation")
     {
         condReg_t P;
+        srand(time(NULL));
         bool a[8] = {0};
         for (int i = 0; i < 100; i++)
         {

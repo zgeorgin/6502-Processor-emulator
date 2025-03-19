@@ -1,5 +1,6 @@
+#include <CPU.h>
 
-int main()
-{
-    return 0;
+int main() {
+  CPU cpu;
+  return 0;
 }
